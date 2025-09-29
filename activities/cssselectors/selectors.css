@@ -1,0 +1,50 @@
+header h1 {
+    color: cadetblue;
+}
+
+main h1 {
+    color: cadetblue;
+}
+
+main h2 {
+    color: cadetblue;
+}
+main p {
+    color: grey;
+}
+
+main h4 {
+    color: darkcyan;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#celestial {
+    color: coral;
+}
+
+.crimson {
+    color: rgba(255, 0, 51, 0.8);
+}
+
+.bigger {
+    font-size: 15pt;
+}
+
+.blue {
+    color: cornflowerblue;
+}
+
+.smaller {
+    font-size: 5pt;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.standout {
+    font-weight: 900;
+}
