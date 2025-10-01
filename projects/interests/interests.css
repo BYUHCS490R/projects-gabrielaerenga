@@ -1,0 +1,39 @@
+header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f3e8ee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body p {
+    color: #353238;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body h1 {
+    background-color: #7FB9C7;
+}
+
+body h4 {
+    background-color: gainsboro;
+}
+
+.smallprint {
+    font-size: 8pt;
+    color: #D5D3D9;
+}
+
+.nolink {
+    color: #f3e8ee;
+}
+
+.navlink {
+    color: #353238;
+}
+
+.link {
+    color: #353238;
+}
