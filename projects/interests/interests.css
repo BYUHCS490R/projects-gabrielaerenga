@@ -37,3 +37,27 @@ body h4 {
 .link {
     color: #353238;
 }
+
+.q1 {
+    color:black;
+    font-weight: 600;
+    font-size: 15pt;
+}
+
+.q2 {
+    color: #D5D3D9;
+}
+
+.q3 {
+    color: #353238;
+}
+
+.hero {
+    color: black;
+    font-weight: 600;
+    font-size: 15pt;
+}
+
+body h2 {
+    background-color: gainsboro;
+}
