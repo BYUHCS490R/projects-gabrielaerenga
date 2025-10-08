@@ -1,0 +1,23 @@
+nav a {
+    color: #ffe5e5ab;
+}
+
+.current {
+    color: #FFFBFE;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(bluebg.jpg);
+    background-repeat: repeat;
+    color: #77D6F9;
+}
+
+body h1 {
+    font-weight: 750;
+}
+
+.list {
+    list-style-image: url();
+}
