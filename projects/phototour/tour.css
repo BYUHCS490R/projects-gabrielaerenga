@@ -5,6 +5,7 @@ nav a {
 .current {
     color: #FFFBFE;
     text-decoration: none;
+    font-weight: 550;
 }
 
 body {
@@ -18,6 +19,13 @@ body h1 {
     font-weight: 750;
 }
 
+body ul {
+    background-image: url(island.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 .list {
-    list-style-image: url();
+    list-style-image: url(diamond.png);
+    font-size: 13pt;
 }
