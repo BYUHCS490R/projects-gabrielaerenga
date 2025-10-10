@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: bisque;
+    padding: 50px;
+    margin: 25px;
+    border-style: dashed;
+    border-color: rgb(0, 0, 0);
+    border-width: 20px;
+    
+}
+
+header h1 {
+    background-color: dodgerblue;
+    border-style: ridge;
+    border-color: rgb(255, 0, 0);
+    border-width: 30px;
+    text-align: center;
+}
+
+nav {
+    background-color: cadetblue;
+    border-style: double;
+    border-color: darkmagenta;
+    border-width: 40px;
+    padding: 50px 25px;
+}
+
+main h1 {
+    border-style: solid;
+    border-width: 4px;
+    width: 50%;
+    height: 25px;
+    overflow: hidden;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+main p {
+    border: thick, dotted, coral;
+    padding: 10px 50px 100px 150px;
+
+}
