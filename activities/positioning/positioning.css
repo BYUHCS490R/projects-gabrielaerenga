@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: maroon;
+    color: white;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px;
+    background-color: cadetblue;
+    border-bottom: thin solid white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.qldlogo {
+    border-style: solid;
+    width: 300px;
+    float: right;
+}
+
+.hammer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: none;
+}
+
+.floater {
+    float: right;
+}
+
+.qldlogo img {
+    width: 100%;
+}
+
+.stop {
+    clear: both;
+}
