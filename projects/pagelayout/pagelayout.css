@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: maroon;
+}
+
+nav a {
+    display: inline-block;
+    padding: 15px;
+    background-color: rgb(194, 194, 194);
+    color: maroon;
+    text-decoration: none;
+}
+
+#content {
+    background-color: antiquewhite;
+    width: 900px;
+}
+
+.stop {
+    clear: both;
+}
+
+.float {
+    float: right;
+}
+
+.logo {
+    background-image: url(broncos.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+
