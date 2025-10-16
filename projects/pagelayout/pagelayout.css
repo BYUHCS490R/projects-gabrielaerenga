@@ -1,34 +1,80 @@
-body {
+#content {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: maroon;
+    text-align: center;
+    background-color: antiquewhite;
+    height: auto;
+    width: 900px;
+    margin: auto;
+    box-shadow: 20px 20px 20px black;
 }
 
 nav a {
     display: inline-block;
-    padding: 15px;
-    background-color: rgb(194, 194, 194);
-    color: maroon;
+    padding: 10px;
     text-decoration: none;
+    background-color: darkgray;
+    color: white;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: maroon;
+    border-width: 5px;
+    border-radius: 5px;
 }
 
-#content {
+nav a:hover {
+    background-color: maroon;
+}
+
+.maintitle {
+    font-weight: 700;
+    text-shadow: none;
     background-color: antiquewhite;
-    width: 900px;
+    padding: 20px;
+    border-style: solid;
+    border-top: 10px;
+    border-left: 10px;
+    border-right: 10px;
+    border-width: 20px;
+    border-color: maroon;
+    text-shadow: 2px 2px 9px maroon;
 }
 
-.stop {
-    clear: both;
+.secondtitle {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    line-height: normal;
+    text-transform: uppercase;
+    border-top-style: solid;
+    border-width: 20px;
+    border-color: maroon;
+    padding-top: 20px;
+    text-shadow: 2px 2px 9px black;
+}
+
+body {
+    background-color: maroon;
+}
+
+main p {
+    margin: 40px;
+    border-bottom: 20px;
+}
+
+footer {
+    background-image: url(broncos.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+    background-clip: none;
+    padding: 50px;
+    text-align: left;
 }
 
 .float {
     float: right;
 }
 
-.logo {
-    background-image: url(broncos.png);
-    background-repeat: no-repeat;
-    background-position: right;
+.stop {
+    clear: both;
 }
-
-
-
