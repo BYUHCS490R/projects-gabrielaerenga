@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    gap: 10px;
+}
+
+.child {
+    background-color: burlywood;
+    text-align: center;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+        "top top top"
+        "lside middle rside"
+        "lbottom bottom bottom";
+}
+
+header {
+    grid-area: top;
+    background-color: rgb(243, 106, 255);
+}
+
+main {
+    grid-area: rside;
+    background-color: rgb(255, 0, 0);
+}
+
+footer {
+    grid-area: lbottom;
+    background-color: rgb(58, 61, 255);
+}
+
+nav {
+    grid-area: lside;
+    background-color: rgb(105, 255, 112);
+}
