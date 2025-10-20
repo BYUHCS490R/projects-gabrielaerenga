@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    border: thin solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px black;
+    width: 140px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: burlywood;
+    text-decoration: none;
+    color: black;
+    width: 150px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgb(156, 131, 98);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
