@@ -1,0 +1,63 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    background-color: blanchedalmond;
+    color: black;
+}
+
+nav a:hover {
+    background-color: white
+}
+
+nav {
+    display: none;
+}
+
+header {
+    background-color: cadetblue;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.main-row {
+    display: flex;
+}
+
+main h3 {
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sidebar {
+    width: 200px;
+    margin-right: 20px;
+}
+.sidebar h3 {
+    margin: 0;
+}
+
+.card {
+    width: 200px;
+    border: thin solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+.card img {
+    width: 100%;
+}

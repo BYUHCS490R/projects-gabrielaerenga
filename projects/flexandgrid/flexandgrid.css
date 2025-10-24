@@ -44,10 +44,19 @@ nav a:hover {
 
 .row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+.row2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
 
 .card {
     display: block;
