@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 153, 0);
+    margin: 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: rgb(235, 187, 114);
+}
+
+h1 {
+    background-color: cadetblue;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: 30% 1fr 1fr 1fr;
+}
+
+.sidebar {
+    background-color: cornflowerblue;
+    margin: 0;
+    width: 30%;
+}
+
+.main-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    border: thin solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stop {
+    clear: both;
+}
+
+@media ONLY screen AND (max-width:480px) {
+    mobile CSS
+}
