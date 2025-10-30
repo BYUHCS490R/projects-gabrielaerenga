@@ -21,25 +21,40 @@ nav a:hover {
 }
 
 h1 {
-    background-color: cadetblue;
+    background-color: rgb(0, 174, 255);
     margin: 0;
     padding: 20px;
 }
 
+main {
+    background-color: rgb(0, 174, 255);
+}
+
 .main-content {
     display: flex;
-    justify-content: 30% 1fr 1fr 1fr;
 }
 
 .sidebar {
-    background-color: cornflowerblue;
+    background-color: rgb(0, 174, 255);
     margin: 0;
-    width: 30%;
+    padding-right: 10px;
+    width: 300px;
+}
+
+.sidebar h2 {
+    margin-left: 20px;
+}
+
+.heelers {
+    width: 200px;
+    margin: 0;
+    padding: 0;
 }
 
 .main-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: 30% 1fr 1fr 1fr;
 }
 
 .card {
@@ -47,51 +62,53 @@ h1 {
     border-radius: 5px;
     box-shadow: 5px 5px 5px;
     margin: 5px;
+    padding: 5px;
     text-align: center;
+    width: 300px;
+    background-color:rgb(184, 179, 170);
 }
 
+.card h3 {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
 
+.card p {
+    margin-top: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.img {
+    width: 200px;
+}
 
 .stop {
     clear: both;
 }
 
-@media ONLY screen AND (max-width:480px) {
-    mobile CSS
+
+@media ONLY screen AND (max-width:500px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .main-content {
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .heelers {
+        width: 100%;
+    } 
 }

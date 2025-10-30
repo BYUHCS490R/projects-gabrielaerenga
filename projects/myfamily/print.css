@@ -1,3 +1,125 @@
-@media ONLY print {
-    
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 153, 0);
+    margin: 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: rgb(235, 187, 114);
+}
+
+.navbar {
+    display: none;
+}
+
+h1 {
+    background-color: rgb(0, 174, 255);
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    background-color: rgb(0, 174, 255);
+}
+
+.main-content {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column-reverse;
+}
+
+.sidebar {
+    background-color: rgb(0, 174, 255);
+    margin: 0;
+    padding-right: 10px;
+    width: 30%;
+}
+
+.sidebar h2 {
+    margin-left: 20px;
+}
+
+.heelers {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: 30% 1fr 1fr 1fr;
+}
+
+.card {
+    border: thin solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 300px;
+    background-color:rgb(184, 179, 170);
+}
+
+.card h3 {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.card p {
+    margin-top: 0;
+}
+
+.img {
+    width: 200px;
+}
+
+.stop {
+    clear: both;
+}
+
+
+@media ONLY print AND (max-width:480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .main-content {
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-flow: column-reverse;
+    }
+
+    .heelers {
+        width: 100%;
+    } 
 }
