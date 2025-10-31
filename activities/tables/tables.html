@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Gabe's Web Design Site</h1>
+    </header>
+
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+
+    <main>
+        <h1>Tables</h1>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="6">Fall 2025</th>
+                </tr>
+                <tr>
+                    <th>Department</th>
+                    <th>Number</th>
+                    <th>Title</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="4">CS</td>
+                    <td>140</td>
+                    <td>Web Design</td>
+                    <td>12PM MWF</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>415</td>
+                    <td>Operating Systems</td>
+                    <td>2PM MWF</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>401</td>
+                    <td>Web Applications</td>
+                    <td>3PM MWF</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>140</td>
+                    <td>Web Design</td>
+                    <td>6PM MWF</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="5" id="total-credits">Total Credits</th>
+                    <td headers="total-credits">12</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="questions">
+            <h3>When do you use a table?</h3>
+            <p>When dealing with data or statistics to place into rows or columns</p>
+
+            <h3>When do you not use a table?</h3>
+            <p>To layout elements on a web page</p>
+
+            <h3>When do you need to do extra work for table accessibility?</h3>
+            <p>You need to make sure the labels are "th" instead of "td" for the table headings. Also to help, is seperating the different sections of the table by using the "thead", "tbody", and "tfoot" tags.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gabriel Aerenga</p>
+    </footer>
+
+</body>
+
+</html>
