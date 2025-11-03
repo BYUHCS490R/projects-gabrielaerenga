@@ -22,8 +22,9 @@
 
     <main>
         <h1>Tables</h1>
-
-        <table border="1">
+        
+        <table class="schedule">
+            <caption>My class schedule</caption>
             <thead>
                 <tr>
                     <th colspan="6">Fall 2025</th>
@@ -40,7 +41,7 @@
 
             <tbody>
                 <tr>
-                    <td rowspan="4">CS</td>
+                    <td rowspan="4" class="subject">CS</td>
                     <td>140</td>
                     <td>Web Design</td>
                     <td>12PM MWF</td>
@@ -87,6 +88,13 @@
 
             <h3>When do you need to do extra work for table accessibility?</h3>
             <p>You need to make sure the labels are "th" instead of "td" for the table headings. Also to help, is seperating the different sections of the table by using the "thead", "tbody", and "tfoot" tags.</p>
+        </div>
+
+        <div class="questions">
+            <h3>Why don't we use the border attribute?</h3>
+            <p>It is considered obsolete and also that it lacks customization when using CSS.</p>
+            <h3>What is the easiest way to color every other row a different color?</h3>
+            <p>Using the pseudo tag like tr:nth-child(even) and change color accordingly.</p>
         </div>
     </main>
 
