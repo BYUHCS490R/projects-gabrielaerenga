@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Project</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Gabe's Web Design Site</h1>
+    </header>
+
+    <main>
+        <h1>Forms</h1>
+        <form action="formprocess.html" method="post">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name: </label><input type="text" name="fname" placeholder="John Doe" id="fname">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email Address: </label><input type="email" name="fname" placeholder="johndoe@apple.com" id="fname">
+                </div>
+
+                <div class="form-row">
+                    <label for="date">Date of Incident: </label><input type="date" name="date" id="date">
+                </div>
+
+                <div class="form-row">
+                    <label for="region">Region: </label>
+                    <select name="region" id="region">
+                        <option value="blank"></option>
+                        <option value="NA">North America</option>
+                        <option value="SA">South America</option>
+                        <option value="OC">Oceania</option>
+                        <option value="AS">Asia</option>
+                        <option value="EU">Europe</option>
+                        <option value="AF">Africa</option>
+                    </select>
+                </div>
+
+                <div class="check-row">
+                    <label><input type="radio" name="plan" value="Free">Free Plan</label>
+                    <label><input type="radio" name="plan" value="Gold">Gold Plan</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="concerns">Concerns: </label>
+                    <textarea name="concerns" placeholder="Tell us what you think!" id="concerns"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Password Verification: </label><input type="password" name="pass" id="pass">
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label for="terms">I agree to the terms and conditions.</label><input type="checkbox">
+                </div>
+
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Submit">
+                </div>
+                
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gabriel Aerenga</p>
+    </footer>
+
+</body>
+</html>
