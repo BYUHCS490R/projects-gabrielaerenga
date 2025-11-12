@@ -10,6 +10,17 @@ header {
     font-size: 23px;
 }
 
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.form row label {
+    width: 150px;
+    text-align: right;
+}
+
 footer {
     background-color:lightseagreen;
     padding: 20px;
