@@ -19,7 +19,7 @@
                     <label for="fname">Full Name: </label><input type="text" name="fname" placeholder="John Doe" id="fname">
                 </div>
                 <div class="form-row">
-                    <label for="email">Email Address: </label><input type="email" name="fname" placeholder="johndoe@apple.com" id="fname">
+                    <label for="email">Email Address: </label><input type="email" name="email" placeholder="johndoe@apple.com" id="email">
                 </div>
                 <div class="form-row">
                     <label for="date">Date of Incident: </label><input type="date" name="date" id="date">
@@ -27,10 +27,9 @@
                 <div class="form-row">
                     <label for="region">Region: </label>
                     <select name="region" id="region">
-                        <option value="blank"></option>
                         <option value="NA">North America</option>
                         <option value="SA">South America</option>
-                        <option value="OC">Oceania</option>
+                        <option value="OC" selected>Oceania</option>
                         <option value="AS">Asia</option>
                         <option value="EU">Europe</option>
                         <option value="AF">Africa</option>
@@ -45,11 +44,11 @@
                     <textarea name="concerns" placeholder="Tell us what you think!" id="concerns"></textarea>
                 </div>
                 <div class="form-row">
-                    <label for="password">Password Verification: </label><input type="password" name="pass" id="pass">
+                    <label for="pass">Password Verification: </label><input type="password" name="pass" id="pass">
                 </div>
                 <div class="check-row">
                     <div class="spacer"></div>
-                    <label for="terms">I agree to the terms and conditions.</label><input type="checkbox">
+                    <label for="terms">I agree to the terms and conditions.</label><input type="checkbox" name="terms" id="terms">
                 </div>
                 <div class="form-row">
                     <div class="spacer"></div>
