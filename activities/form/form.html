@@ -13,17 +13,20 @@
 
     <main>
         <h1>Forms</h1>
-        <form action="formprocess.html" method="post">
+        <form action="formprocess.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
                 <div class="form-row">
-                    <label for="firstNameInput">Full Name: </label><input type="text" name="fullname" placeholder="Full Name" id="fname">
+                    <label for="fullname">Full Name: </label><input type="text" name="fullname" placeholder="Full Name" id="fullname">
                 </div>
                 <div class="form-row">
-                    <label for="emailInput">Email: </label><input type="email" name="fullname" id="fname">
+                    <label for="email">Email: </label><input type="email" name="email" id="email">
                 </div>
                 <div class="form-row">
-                    <label for="passwordInput">Password: </label><input type="password" name="pass" id="pass">
+                    <label for="pass">Password: </label><input type="password" name="pass" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age: </label><input type="number" name="age" id="age">
                 </div>
                 <div class="form-row">
                     <label for="state">State:</label>
@@ -37,7 +40,7 @@
                 </div>
                 <div class="check-row">
                     <div class="spacer"></div>
-                    <label><input type="checkbox" checked>I agree to the terms.</label>
+                    <label><input type="checkbox" name="terms" id="terms" checked>I agree to the terms.</label>
                 </div>
                 <div class="check-row">
                     <div class="spacer">Gender: </div>
@@ -59,5 +62,37 @@
     <footer>
         <p>&copy; 2025 Gabriel Aerenga</p>
     </footer>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
+
+            if (!fullname || !email) {
+                alert("You need a name and email.");
+                return;
+            }
+
+            if (!age || age <18) {
+                alert("You need to be 18");
+                return;
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age
+            };
+
+            alert("Form Submitted");
+            console.log(formData);
+        });
+    </script>
+
 </body>
 </html>
