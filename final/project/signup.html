@@ -10,20 +10,66 @@
     <header>
         <h1>Rust in Paradise</h1>
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Gallery</a>
-        <a href="#">Posts</a>
-        <a href="#">Costs</a>
-        <a href="#">Contact</a>
-        <a href="#">Sign Up</a>
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="gallery.html">gallery</a>
+        <a href="diy.html">diy</a>
+        <a href="costs.html">costs</a>
+        <a href="contact.html">contact</a>
+        <a href="signup.html" class="current">sign up</a>
     </nav>
     <main>
-        <h1>Join the Crew!</h1>
+        <div id="message"></div>
+        <h2>sign up</h2>
+        <form action="formprocess.html" method="post" id="myForm">
+            <fieldset>
+                <legend>join the crew!</legend>
+                <div class="form-row">
+                    <label for="fullname">Full Name: </label><input type="text" name="fullname" placeholder="Full Name" id="fullname">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email: </label><input type="email" name="email" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password: </label><input type="password" name="pass" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age: </label><input type="number" name="age" id="age">
+                </div>
+                <div class="form-row">
+                    <label for="state">County:</label>
+                    <select name="state" id="state">
+                        <option value="OH">O'ahu</option>
+                        <option value="HI">Hawai'i(Big Island)</option>
+                        <option value="MI" selected>Maui</option>
+                        <option value="MK">Moloka'i</option>
+                        <option value="KI">Kauai</option>
+                        <option value="LI">Lana'i</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" name="terms" id="terms" checked>I agree to the terms.</label>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments: </label>
+                    <textarea name="comment" id="comment">What car you got?</textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
+        </form>
+
+        <div class="stop"></div>
     </main>
+
     <footer>
         <p>&copy; 2025 Gabriel Aerenga</p>
     </footer>
+    <script src="formprocessing.js"></script>
+        
 </body>
 </html>

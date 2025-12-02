@@ -1,3 +1,174 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: burlywood;
+}
+
+header h1 {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 153, 0);
+    margin: 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: chocolate;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.current {
+    background-color: chocolate;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+main h2 {
+    margin: 0;
+    background-color: beige;
+    padding: 15px 15px 0 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: 1fr 1fr 1fr;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.table {
+    grid-column: 1;
+    display: flex;
+    flex-flow: column;
+    caption-side: bottom;
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 5px;
+}
+
+.table thead tr {
+    background-color: darkcyan;
+    color: white;
+}
+
+.table tfoot tr {
+    background-color: darkcyan;
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgb(254, 189, 92);
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: rgb(180, 179, 176);
+}
+
+footer {
+    background-color: darkorange;
+}
+
+.stop {
+    clear: both;
+}
+
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.form-row input:not([type='submit']), .form-row select, .form-row textarea {
+    padding: 5px 10px;
+    background-color: rgb(252, 201, 124);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+.form-row input:not([type='submit']):focus, .form-row select:focus, .form-row textarea:focus {
+    background-color: white;
+}
+
+.form-row input[type='submit'] {
+    background-color: darkorange;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+fieldset {
+    background-color: beige;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+legend {
+    background-color: chocolate;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+@media ONLY screen AND (max-width:480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    fieldset {
+        width: 95%;
+    }
+
+    .form-row label, spacer {
+        text-align: left;
+    }
 }
