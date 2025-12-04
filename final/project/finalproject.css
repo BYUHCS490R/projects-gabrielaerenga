@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: beige;
 }
 
 header {
@@ -38,6 +39,42 @@ nav a:hover {
     border-top-right-radius: 8px;
 }
 
+.main-content {
+    display: flex;
+}
+
+.gallery-content {
+    display: flex;
+}
+
+.gallery-content h2 {
+    margin-right: 200px;
+}
+
+.gallery-content .sidebar {
+    margin-top: 55px;
+}
+
+.gallery-content .sidebar h2 {
+    border-right: 0;
+}
+
+.sidebar {
+    width: 300px;
+}
+.sidebar h2 {
+    background-color: beige;
+    margin: 0;
+    padding-top: 15px;
+    text-align: right;
+    padding-right: 10px;
+    border-right: 4px solid rgb(255, 153, 0);
+}
+
+.sidebar p {
+    text-align: left;
+    margin-left: 10px;
+}
 
 main h2 {
     margin: 0;
@@ -47,10 +84,14 @@ main h2 {
     text-align: center;
 }
 
+#latest {
+    text-align: left;
+}
+
 .main-row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: 1fr 1fr 1fr;
+    justify-content: 30% 1fr 1fr 1fr;
 }
 
 .card {
@@ -61,6 +102,53 @@ main h2 {
     box-shadow: 5px 5px 5px;
     width: 300px;
     text-align: center;
+    background-color: white;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about_card {
+    width: 400px;
+    padding: 20px;
+}
+
+.about .mechanic {
+    padding: 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social_card {
+    width: 400px;
+    padding: 20px;
+}
+
+.diy-content {
+    display: flex;
+}
+
+.diy-content h2 {
+    margin-right: 50px;
+}
+
+.diy-content .sidebar {
+    margin-top: 55px;
+    margin-left: 20px;
+}
+
+.diyrow {
+    margin-left: 30px;
+}
+
+.costs-content {
+    width: 80%;
+    margin: auto;
 }
 
 .table {
@@ -68,6 +156,8 @@ main h2 {
     display: flex;
     flex-flow: column;
     caption-side: bottom;
+    width: 80%;
+    margin: auto;
 }
 
 .table th, .table td {
@@ -160,6 +250,23 @@ legend {
         text-align: center;
     }
 
+    .main-content {
+        flex-direction: column;
+    }
+
+    .about {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .gallery-content {
+        flex-direction: column;
+    }
+
+    .diy-content {
+        flex-direction: column;
+    }
+
     .form-row, .check-row {
         flex-direction: column;
     }
@@ -170,5 +277,9 @@ legend {
 
     .form-row label, spacer {
         text-align: left;
+    }
+
+    .table {
+        width: 100%;
     }
 }
